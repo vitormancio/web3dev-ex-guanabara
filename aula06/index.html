@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Somando dois números</h1>
+    <button class="button">Iniciar soma</button>
+    <div class="res"></div>
+    <script>
+        const button = document.querySelector('.button')
+        const resultado = document.querySelector('.res')
+
+        button.addEventListener('click',() => {
+
+            const numero1 = Number(prompt('Digite um número'))
+            const numero2 = Number(prompt('Digite outro número'))
+
+            resultado.innerHTML = `A soma entre <mark>${numero1}</mark> e <mark>${numero2}<mark/> é igual a <mark>${numero1 + numero2}</mark>`
+              
+
+        })
+
+       
+
+        
+         
+        
+
+    </script>
+</body>
+</html>

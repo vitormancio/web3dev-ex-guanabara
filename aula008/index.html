@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Vários Calculos em JS</h1>
+    <button class="button">Clique para calcular</button>
+    <div class="res">O resultado vem aqui...</div>
+    <script>
+        const button = document.querySelector('.button')
+        const resultado = document.querySelector('.res')
+
+        button.addEventListener('click',() => {
+            const number = Number(prompt('Digite um número:'))
+
+            resultado.innerHTML = `O número a ser analizado é :${number}</br>`
+            resultado.innerHTML += `O seu valor absoluto é :${Math.abs(number)}</br>`
+            resultado.innerHTML += `O número inteiro mais próximo :${Math.round(number)}</br>`
+            resultado.innerHTML += `A raiz quadrada é :${Math.sqrt(number)}</br>`
+            resultado.innerHTML += `A raiz cubica :${Math.cbrt(number)}</br>`
+            resultado.innerHTML += `O valor de ${number}<sup>2</sup> é igual a :${(number **2)}</br>`
+            resultado.innerHTML += `O valor de ${number}<sup>3</sup> é igual a :${(number **3)}</br>`
+        })
+    </script>
+</body>
+</html>
